@@ -1,0 +1,83 @@
+body, html
+	font-size 16px
+	background $lightgrey
+
+.list-inline
+	li
+		display inline-block
+
+#rolodex
+	padding 40px 0
+	overflow auto
+
+	.card
+		border-radius $outer-radius
+		background #ffffff
+		border 1px solid $border
+		overflow hidden
+		margin-bottom 20px
+		min-height 320px
+		position relative
+		text-align center
+		cursor pointer
+
+		.card-image
+			background-image url('http://79eeea381619f313d82e-993cdc17da461fcae971e861a6f98752.r94.cf1.rackcdn.com/chicago/venue/image/2882576/UP_Club_Interior_01-25-2012_4455.jpg')
+			background-size cover
+			width 100%
+			height 100%
+			position absolute
+
+		.card-notice
+			background linear-gradient(to bottom, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0) 100%)
+			position absolute
+			top 0
+			height 50%
+			width 100%
+			padding 15px
+
+			.time
+				display inline-block
+				border 1.5px solid $green
+				padding 5px
+				border-radius $inner-radius
+				color  $green
+				font-size 0.75rem
+				line-height 0.75rem
+				text-transform uppercase
+				font-weight bold
+				background rgba(0, 0, 0, 0.35)
+
+		.card-info
+			position absolute
+			background #ffffff
+			width 100%
+			bottom 0
+			box-shadow 0 0 60px 35px #ffffff
+			padding 15px
+
+			h1
+				font-size 1.5rem
+				margin -20px 0 5px 0
+				line-height 1.5rem
+
+			h2
+				font-size 0.75rem
+				color #a2a2a2
+				margin 0
+			.card-info-data
+				margin-bottom 5px
+				overflow auto
+
+.pill
+	display inline-block
+	font-size 0.75rem
+	line-height 0.75rem
+	background #bfbfbf
+	border-radius $inner-radius
+	color white
+	font-weight bold
+	padding 4px 5px
+
+	&.pill-icon
+		padding-left 20px
