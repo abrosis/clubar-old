@@ -1,6 +1,19 @@
+medium = 'screen and (max-width: 768px)'
+large = 'screen and (min-width: 992px)'
+xlarge = 'screen and (min-width: 1200px)'
+
 body, html
 	font-size 16px
 	background $lightgrey
+
+
+::selection
+	color white 
+	background $green
+
+	
+.container-fluid 
+	padding 0 40px
 
 .list-inline
 	li
@@ -15,15 +28,19 @@ body, html
 		background #ffffff
 		border 1px solid $border
 		overflow hidden
-		margin-bottom 20px
+		margin-bottom 40px
 		min-height 320px
 		position relative
 		text-align center
 		cursor pointer
+		
+		@media large
+			margin-bottom 30px
 
 		.card-image
 			background-image url('http://79eeea381619f313d82e-993cdc17da461fcae971e861a6f98752.r94.cf1.rackcdn.com/chicago/venue/image/2882576/UP_Club_Interior_01-25-2012_4455.jpg')
 			background-size cover
+			background-position center center
 			width 100%
 			height 100%
 			position absolute
@@ -38,12 +55,12 @@ body, html
 
 			.time
 				display inline-block
-				border 1.5px solid $green
-				padding 5px
-				border-radius $inner-radius
+				border 2px solid $green
+				border-radius 25px
+				padding 5px 15px
 				color  $green
-				font-size 0.75rem
-				line-height 0.75rem
+				font-size 0.7rem
+				line-height 1rem
 				text-transform uppercase
 				font-weight bold
 				background rgba(0, 0, 0, 0.35)

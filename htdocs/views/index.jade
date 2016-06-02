@@ -3,39 +3,23 @@ extends layout
 block content
 	header
 		#masthead
-			.container
+			.container-fluid
 				.row
-					.logo.col-md-4.col-md-push-4.col-xs-6
+					.logo.col-sm-2.col-xs-6.text-left
 						img(src='/images/logo.svg')#logo
-					.col-md-4.col-md-pull-4.col-xs-6
-						nav
-							ul
-								li.active
-									i.cb.cb-explore 
-								li
-									i.cb.cb-trending 
-								li
-									i.cb.cb-profile 
-					.col-md-4.hidden-xs
-						ul
-							li
-								ul
-									li
-									li
-									li
-		#search
-			.container
-				.row
-					.col-md-12
-						input(type='search', placeholder='Search for all Clubs and Bars...')
+					.col-sm-8.hidden-xs
+						#search
+							input(type='search', placeholder='Search for Clubs and Bars...')
+					.col-sm-2.col-xs-6
+		
 	section#banner
 		.shadow
-			.container
+			.container-fluid
 				.row
 					.col-md-12
 						h1= title
 	#filter
-		.container
+		.container-fluid
 			.row
 				.col-md-12
 					nav
@@ -46,9 +30,9 @@ block content
 								a Where
 							li.col-sm-4
 								a What
-	article#page.container
+	article#page.container-fluid
 		div#rolodex.row(role="list")
-			.col-lg-4.col-md-6.col-sm-12
+			.col-xl-3.col-lg-4.col-md-6.col-sm-12
 				.card(role="listitem")
 					.card-image
 					.card-notice
@@ -60,7 +44,7 @@ block content
 								i.cb.cb-pin 
 							.pill.right.pull-right  &pound;3.00
 						h2 Patterns with Giles Peterson
-			.col-lg-4.col-md-6.col-sm-12
+			.col-xl-3.col-lg-4.col-md-6.col-sm-12
 				.card(role="listitem")
 					.card-image
 					.card-notice
@@ -68,7 +52,7 @@ block content
 					.card-info
 						h1 Patterns
 						h2 Patterns with Giles Peterson
-			.col-lg-4.col-md-6.col-sm-12
+			.col-xl-3.col-lg-4.col-md-6.col-sm-12
 				.card(role="listitem")
 					.card-image
 					.card-notice
@@ -76,7 +60,7 @@ block content
 					.card-info
 						h1 Patterns
 						h2 Patterns with Giles Peterson
-			.col-lg-4.col-md-6.col-sm-12
+			.col-xl-3.col-lg-4.col-md-6.col-sm-12
 				.card(role="listitem")
 					.card-image
 					.card-notice
@@ -84,7 +68,7 @@ block content
 					.card-info
 						h1 Patterns
 						h2 Patterns with Giles Peterson
-			.col-lg-4.col-md-6.col-sm-12
+			.col-xl-3.col-lg-4.col-md-6.col-sm-12
 				.card(role="listitem")
 					.card-image
 					.card-notice
@@ -92,7 +76,7 @@ block content
 					.card-info
 						h1 Patterns
 						h2 Patterns with Giles Peterson
-			.col-lg-4.col-md-6.col-sm-12
+			.col-xl-3.col-lg-4.col-md-6.col-sm-12
 				.card(role="listitem")
 					.card-image
 					.card-notice

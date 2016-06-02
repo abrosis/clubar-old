@@ -1,12 +1,11 @@
 header
 	#masthead
-		background $black
+		background $black-trans
 		height 65px
 		width 100%
-
-		.logo
-			text-align center
-
+		position fixed
+		z-index 999
+		
 		ul
 			margin 0
 			padding 0
@@ -33,8 +32,8 @@ header
 		margin 17px 0 0 0 
 
 	#search
-		background $darkgrey
 		height 40px
+		margin-top 15px
 
 		input
 			width 100%
@@ -42,19 +41,25 @@ header
 			border none
 			outline none
 			font-weight bold
-			color $grey
-			padding 5px 5px 5px 40px
+			color $lightgrey
+			padding 5px 40px 5px 20px
+			border-radius $outer-radius
+			font-size 1.1rem
+			box-sizing border-box
 
 			&::-webkit-input-placeholder
-				color $grey
+				color $darkgray
 
 #banner
-	background #151515 url(../images/bg.svg) no-repeat center center
+	background #151515 url(http://image.shutterstock.com/z/stock-photo-concert-disco-party-people-with-hands-up-having-fun-in-night-club-lights-vintage-mood-260562557.jpg) no-repeat center center
+	background: #3DC195 url("http://www.thirtythree.co.uk/themes/thirty_three/assets/img/pattern_2_purple.png") no-repeat center center;
+	background: #9A1048 url("http://www.thirtythree.co.uk/themes/thirty_three/assets/img/pattern_2_purple.png") no-repeat center center;
 	background-size cover
 	text-align center
+	padding-top 65px
 	.shadow
-		padding 30px 0
-		background linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%)
+		padding 50px 0
+		//background linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%)
 
 		h1
 			font-size 2.6rem
